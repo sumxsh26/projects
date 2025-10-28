@@ -1,15 +1,15 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
 import { Line, Logo, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Sumayyah",
+  lastName: "Zaini",
+  name: "Sumayyah Zaini",
+  role: "Junior Developer, Web Designer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "smyyhzaii@gmail.com",
+  location: "Asia/Singapore", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Malay"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -24,17 +24,17 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/sumxsh26",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/sumayyah-zaini-457ab2210/",
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "Behance",
+    icon: "behance",
+    link: "https://www.behance.net/sumayyahzaini1",
   },
   {
     name: "Email",
@@ -49,7 +49,7 @@ const home: Home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>developer by day, designer by heart</>,
   featured: {
     display: true,
     title: (
@@ -65,14 +65,8 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Salaams, it's Sumayyah, <br />  a junior developer and creative designer
+      based in sunny singapore.
     </>
   ),
 };
@@ -80,7 +74,7 @@ const home: Home = {
 const about: About = {
   path: "/about",
   label: "About",
-  title: `About – ${person.name}`,
+  title: `About ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
@@ -98,9 +92,7 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Sumayyah is an IT graduate with a passion for building user-centric digital solutions. Skilled in front-end development, passionate in Web design and development. Experienced in full-stack development, high-paced environment, and collaborative project work. Adept at blending design and technical knowledge to create intuitive and efficient applications.
       </>
     ),
   },
@@ -109,17 +101,25 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "PXT Equity",
+        timeframe: "2025 - Present",
+        role: "Website Intern",
         achievements: [
+          // biome-ignore lint/complexity/noUselessFragments: <explanation>
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+          Enhanced and optimized existing company websites through design and functionality improvements aligned with strategic objectives.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Designed and developed two fully functional client websites (1. an arbitrage firm and, 2. an e-commerce platform) , handling end-to-end processes including UI/UX design, WordPress development, and deployment readiness.
+          </>,
+          <>
+          Set up domain infrastructure and Google Workspace integration for company email systems to ensure seamless operations.
+          </>,
+          <>
+          Collaborated with internal strategists and designers on web development projects, including a Japan Incorporation Project, contributing both visual design and implementation.
+          </>,
+          <>
+          Conducted Game Design Research and competitive analysis for a new TCG (Trading Card Game) concept, authored the Game Design Document, and prototyped gameplay using Tabletop Simulator in collaboration with graphic designers.
           </>,
         ],
         images: [
@@ -133,17 +133,15 @@ const about: About = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "OCBC",
+        timeframe: "2023 - 2024",
+        role: "Front-End Developer & UI/UX Designer Intern",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Developed responsive and dynamic web pages for a Design Lab using HTML, CSS, JavaScript, and React.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Conducted user research and usability testing to inform design improvements.
           </>,
         ],
         images: [],
@@ -155,12 +153,12 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Ngee Ann Polytechnic",
+        description: <>Diploma in Information Technology.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "British Council Singapore",
+        description: <>IGCSE (Secondary School Qualification).</>,
       },
     ],
   },
@@ -171,7 +169,7 @@ const about: About = {
       {
         title: "Figma",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>Fluent in design and prototyping in Figma.</>
         ),
         tags: [
           {
