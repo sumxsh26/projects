@@ -105,22 +105,21 @@ const about: About = {
         timeframe: "2025 - Present",
         role: "Website Intern",
         achievements: [
-          // biome-ignore lint/complexity/noUselessFragments: <explanation>
-          <>
+          <div key="0">
           Enhanced and optimized existing company websites through design and functionality improvements aligned with strategic objectives.
-          </>,
-          <>
+          </div>,
+          <div key="1">
             Designed and developed two fully functional client websites (1. an arbitrage firm and, 2. an e-commerce platform) , handling end-to-end processes including UI/UX design, WordPress development, and deployment readiness.
-          </>,
-          <>
+          </div>,
+          <div key="2">
           Set up domain infrastructure and Google Workspace integration for company email systems to ensure seamless operations.
-          </>,
-          <>
+          </div>,
+          <div key="3">
           Collaborated with internal strategists and designers on web development projects, including a Japan Incorporation Project, contributing both visual design and implementation.
-          </>,
-          <>
+          </div>,
+          <div key="4">
           Conducted Game Design Research and competitive analysis for a new TCG (Trading Card Game) concept, authored the Game Design Document, and prototyped gameplay using Tabletop Simulator in collaboration with graphic designers.
-          </>,
+          </div>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -136,14 +135,7 @@ const about: About = {
         company: "OCBC",
         timeframe: "2023 - 2024",
         role: "Front-End Developer & UI/UX Designer Intern",
-        achievements: [
-          <>
-            Developed responsive and dynamic web pages for a Design Lab using HTML, CSS, JavaScript, and React.
-          </>,
-          <>
-            Conducted user research and usability testing to inform design improvements.
-          </>,
-        ],
+        achievements: ["insert long text here"],
         images: [],
       },
     ],
